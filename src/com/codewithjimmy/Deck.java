@@ -28,7 +28,7 @@ public class Deck {
         int randomCardIndex = 0;
         int originalSize = this.cards.size();
         for(int i = 0; i < originalSize; i++){
-            //Generate Random Index
+            //Generate Random Index ((max - min) + 1) + min
             randomCardIndex = rand.nextInt((this.cards.size()-1 - 0) + 1) + 0;
             tmpDeck.add(this.cards.get(randomCardIndex));
             //Remove from original deck
