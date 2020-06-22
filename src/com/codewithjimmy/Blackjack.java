@@ -7,7 +7,7 @@ public class Blackjack {
         System.out.println("Welcome to BlackJack");
         Deck playingCards = new Deck();
         playingCards.createFullDeck();
-
+        playingCards.shuffle();
         System.out.println(playingCards);
     }
 }
