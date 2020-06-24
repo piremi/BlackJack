@@ -81,14 +81,16 @@ public class Deck {
                 case KING: totalValue += 10; break;
                 case ACE: aces += 1; break;
             }
-            //ACE calibration
-            for(int i = 0; i<aces; i++){
-                if(totalValue > 10){
-                    totalValue += 1;
-                }else{
-                    totalValue += 11;
-                }
+
+        }
+        //ACE calibration
+        for(int i = 0; i<aces; i++){
+            if(totalValue > 10){
+                totalValue += 1;
+            }else{
+                totalValue += 11;
             }
         }
+        return totalValue;
     }
 }
