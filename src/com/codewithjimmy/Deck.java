@@ -60,6 +60,9 @@ public class Deck {
         comingFrom.removeCard(0);
     }
 
+    public int deckSize(){
+        return this.cards.size();
+    }
     //Return total value of cards in deck
     public int cardsValue(){
         int totalValue = 0;
