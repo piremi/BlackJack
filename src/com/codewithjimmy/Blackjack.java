@@ -103,6 +103,8 @@ public class Blackjack {
                 playerMoney += playerBet;
                 endRound = true;
             }
+            playerDeck.moveAllToDeck(playingCards);
+            dealerDeck.moveAllToDeck(playingCards);
         }
         System.out.println("Game Over! You are out of money. @.@");
     }

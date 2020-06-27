@@ -63,6 +63,16 @@ public class Deck {
     public int deckSize(){
         return this.cards.size();
     }
+
+    public void moveAllToDeck(Deck moveTo){
+        int thisDeckSize = this.cards.size();
+        for(int i = 0; i<thisDeckSize; i++){
+            moveTo.addCard(this.cards.get(i));
+        }
+        for(int i = 0; i<thisDeckSize; i++){
+            this.removeCard(0);
+        }
+    }
     //Return total value of cards in deck
     public int cardsValue(){
         int totalValue = 0;
