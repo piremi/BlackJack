@@ -102,9 +102,15 @@ public class Blackjack {
                 System.out.println("You Win the hand!! ^^");
                 playerMoney += playerBet;
                 endRound = true;
+            }else if(endRound == false){
+                System.out.println("You Lose the hand!! @.@");
+                playerMoney -= playerBet;
+                endRound = true;
+
             }
             playerDeck.moveAllToDeck(playingCards);
             dealerDeck.moveAllToDeck(playingCards);
+            System.out.println("End of Hand.");
         }
         System.out.println("Game Over! You are out of money. @.@");
     }
